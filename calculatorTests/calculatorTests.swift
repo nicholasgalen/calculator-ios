@@ -2,35 +2,41 @@
 //  calculatorTests.swift
 //  calculatorTests
 //
-//  Created by Ana Paula Marcal Franzoi on 28/06/25.
+//  Created by Nicholas Galen on 28/06/25.
 //
 
 import XCTest
 @testable import calculator
 
-class calculatorTests: XCTestCase {
+final class calculatorTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testAdd() {
+        let vc = ViewController()
+        let result = vc.add(num1: 5, num2: 3)
+        XCTAssertEqual(result, 8)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testSubtract() {
+        let vc = ViewController()
+        let result = vc.subtract(num1: 10, num2: 4)
+        XCTAssertEqual(result, 6)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testMultiply() {
+        let vc = ViewController()
+        let result = vc.multiply(num1: 3, num2: 4)
+        XCTAssertEqual(result, 12)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testDivide() {
+        let vc = ViewController()
+        let result = vc.divide(num1: 8, num2: 2)
+        XCTAssertEqual(result, 4)
     }
 
+    func testDivideByZero() {
+        let vc = ViewController()
+        let result = vc.divide(num1: 8, num2: 0)
+        XCTAssertTrue(result.isInfinite || result.isNaN)
+    }
 }

@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  calculator
 //
-//  Created by Ana Paula Marcal Franzoi on 28/06/25.
+//  Created by Nicholas Galen on 28/06/25.
 //
 
 import UIKit
@@ -14,8 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var result: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+            super.viewDidLoad()
+        // aqui fica o codigo que inserimos quando o programa rodar
+            firstNumTxt.accessibilityIdentifier = "firstNumTxt"
+            secondNumTxt.accessibilityIdentifier = "secondNumTxt"
+            result.accessibilityIdentifier = "result"
+        }
     
     // _ = Chamada anonima. sender = Objeto que disparou a acao. Any = Recebe qualquer tipo como parametro
     @IBAction func addBtn(_ sender: Any) {

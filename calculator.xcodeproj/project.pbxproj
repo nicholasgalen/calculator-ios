@@ -16,6 +16,8 @@
 		187DCEB82E103E9200271985 /* calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DCEB72E103E9200271985 /* calculatorTests.swift */; };
 		187DCEC22E103E9300271985 /* calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DCEC12E103E9300271985 /* calculatorUITests.swift */; };
 		187DCEC42E103E9300271985 /* calculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DCEC32E103E9300271985 /* calculatorUITestsLaunchTests.swift */; };
+		187DCED02E10885200271985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187DCEA62E103E8E00271985 /* Main.storyboard */; };
+		187DCED12E10885300271985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187DCEA62E103E8E00271985 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187DCED02E10885200271985 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187DCED12E10885300271985 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
